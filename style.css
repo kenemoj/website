@@ -1,0 +1,300 @@
+/*--------------------------landing page------------------------*/
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Rowdies';
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/background.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-position: center ;
+    background-size: cover ;
+    position: relative ;
+    
+}
+nav{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    padding: 1% 3%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+nav img{
+    width: 50px;
+     
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: rgb(0, 0, 0);
+     text-decoration: none;
+     font-size:  18px;
+ }
+ .nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(0, 119, 255);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.intro{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center ;
+}
+
+.box{
+    opacity: 0;
+    transition: all 2s;
+}
+.show{
+    opacity: 1;
+}
+
+.intro h1{
+    font-size: 100px;
+}
+.intro h2{
+    font-size: 80px;
+}
+.intro p{
+    font-size: 20px;
+}
+
+
+
+
+.about{
+    min-height: 100vh;
+    width: 100%;
+    background-position: center ;
+    background-size: cover ;
+    position: relative ;
+    
+}
+.about h1{
+    font-size: 60px;
+}
+.about img{
+border-radius: 25px;
+  background: url(paper.gif);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+}
+
+.man{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center ;    
+}
+
+.exp{
+    min-height: 100vh;
+    width: 100%;
+    background-position: center ;
+    background-size: cover ;
+    position: relative ;
+    
+}
+.experience{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center ;
+    list-style-type: none;
+}.experience ul li{
+    list-style-type: none;
+
+}
+.experience h1{
+    font-size: 60px;
+}
+.experience h3{
+    font-size: 25px;
+}
+
+nav .sticky{
+    padding: 5px 100px;
+}
+.footer{
+    
+    text-align: center;
+    
+}
+.footer h2 a{
+    font-size: 22px;
+    color: rgba(220, 237, 252, 0.692);
+    text-decoration: none;
+    padding: 8px 12px;
+}
+.footer h2 {
+    font-size: 22px;
+    color: rgba(169, 213, 248, 0.692);
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+.footer h3{
+    font-size: 10px;
+    color: grey;
+}
+.footer h1{
+    color: white;
+}
+.man h1{
+    color: white;
+}
+.experience h1{
+    color: white;
+}
+.footer h1{
+    color: white;
+}
+.footer ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 50px 30px;
+    position: relative;
+}
+.footer ul li a{
+    color: white;
+     text-decoration: none;
+     font-size:  22px;
+ }
+ .footer ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(0, 119, 255);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.footer ul li:hover::after{
+    width: 100%;
+}
+.footer h3 a{
+    color:white;
+}
+.footer h3 a:link { text-decoration: none; }
+.footer h3 a:visited { text-decoration: none; }
+.footer h3 a:hover { text-decoration: underline;}
+.footer h3 a:active { text-decoration: none; }
+
+nav .fa{
+    display: none;
+}
+
+
+
+@media(max-width: 500px){
+    .intro h1{
+        font-size: 80px;
+    }
+    .intro h2{
+        font-size: 40px;
+    }
+    .intro p{
+        font-size: 20px;
+    }
+    nav{
+        position: sticky;
+        top: 0px;
+        display: flex;
+        padding: 1% 3%;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        z-index: 1;
+    }
+    nav img{
+        width: 50px;    
+    }
+    .nav-links ul li a{
+        font-size: 25px;
+    }
+
+    .nav-links ul li{
+        
+        display: block;
+        padding: 40px 12px;
+        position: relative;
+    }
+    .nav-links{
+        position: absolute;
+        background: white;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    .experience h1{
+        font-size: 40px;
+    }
+    .experience h2{
+        font-size: 20px;
+    }
+    .experience ul li{
+        font-size: 12px;
+    }
+
+    nav .fa{
+        display: block;
+        cursor: pointer;
+        margin: 10px;
+    }
+
+    
+}
+
+
+
+
+
+
+
