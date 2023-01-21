@@ -21,3 +21,5 @@ const obeserver = new IntersectionObserver((entries) => {
 
 const boxElements = document.querySelectorAll('.box');
 boxElements.forEach((el) => obeserver.observe(el));  
+
+
